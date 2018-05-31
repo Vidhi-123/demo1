@@ -1,0 +1,13 @@
+<input type="number" #num1>
+<br>
+<input type="number" #num2>
+<br>
+<br>
+<button (click)="add(num1.value,num2.value)">+</button>
+<button (click)="sub(num1.value,num2.value)">-</button>
+<button (click)="mul(num1.value,num2.value)">*</button>
+<button (click)="div(num1.value,num2.value)">/</button>
+<h1>the ans is:: {{ans}}</h1>
+
+
+

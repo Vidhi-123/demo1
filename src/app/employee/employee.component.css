@@ -1,0 +1,12 @@
+h1{
+  color:purple;
+  font-family: "Algerian";
+  font-weight: "bolder";
+  margin-left:10px;
+}
+th{
+  background-color:palevioletred;
+}
+td{
+  background-color:lightgrey;
+}

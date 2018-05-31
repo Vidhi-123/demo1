@@ -1,0 +1,46 @@
+
+<div class="container">
+    <h1>TO DO LIST</h1>
+
+  <div class="container">
+  <input type="number" #txtid class="form-control">
+  </div>
+  <br>
+  <div class="container">
+     <input type="text" #txttitle class="form-control">
+  </div>
+  <br>
+  <div class="container">
+  <select #drp class="form-control">
+    <option *ngFor="let item of arr1">{{item}}</option>
+ </select>
+  </div>
+  <br>
+  <div class="container">
+  <button (click)="onAdd(txtid.value,txttitle.value,drp.value)" class="form-control btn btn-primary">Add </button>
+</div>
+<br>
+
+</div>
+<table align="center" class="table">
+  <thead>
+    <th>ID</th>
+    <th>TITLE</th>
+    <th>STATUS</th>
+    <th>ACTION</th>
+  </thead>
+  <tr *ngFor="let item of arr; let i=index">
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td>{{item.status}}</td>
+    <td>
+      <button (click)="onDelete(i)" >Delete </button>
+      <button (click)="onUpdate(item)" >Update </button>
+
+    </td>
+
+
+
+
+  </tr>
+</table>

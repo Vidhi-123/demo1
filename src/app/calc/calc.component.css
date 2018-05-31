@@ -1,0 +1,28 @@
+div
+{
+  height:50px;
+  width:50px;
+  align:center;
+}
+table
+{
+  height:50px;
+  width:50px;
+  border:5px solid black;
+}
+th{
+  color:red;
+}
+td{
+  height:20px;
+  width:200px;
+}
+tr
+{
+  height:30px;
+  width:200px;
+}
+button{
+  height:20px;
+  width:43px;
+}
